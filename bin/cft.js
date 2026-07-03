@@ -20,9 +20,9 @@ function printHelp() {
   log(`cft — one-command Cloudflare quick tunnel
 
 Usage:
-  npx cft <port>                 e.g.  npx cft 8008   → http://localhost:8008
-  npx cft <host:port>            e.g.  npx cft localhost:3000
-  npx cft <url> [-- extra args]  extra flags are passed straight to cloudflared
+  npx github:cicy-ai/cft <port>            e.g.  npx github:cicy-ai/cft 8008
+  npx github:cicy-ai/cft <host:port>       e.g.  ... localhost:3000
+  npx github:cicy-ai/cft <url> [-- args]   extra flags are passed to cloudflared
 
 cloudflared is downloaded automatically if it isn't on PATH (cached in ~/.cache/cft).
 Prints a https://<random>.trycloudflare.com URL you can open from anywhere.`);
