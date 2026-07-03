@@ -17,12 +17,12 @@ const https = require('https');
 function log(msg) { process.stderr.write(msg + '\n'); }
 
 function printHelp() {
-  log(`cft — one-command Cloudflare quick tunnel
+  log(`cicy-cft — one-command Cloudflare quick tunnel
 
 Usage:
-  npx github:cicy-ai/cft <port>            e.g.  npx github:cicy-ai/cft 8008
-  npx github:cicy-ai/cft <host:port>       e.g.  ... localhost:3000
-  npx github:cicy-ai/cft <url> [-- args]   extra flags are passed to cloudflared
+  npx cicy-cft <port>            e.g.  npx cicy-cft 8008   → http://localhost:8008
+  npx cicy-cft <host:port>       e.g.  npx cicy-cft localhost:3000
+  npx cicy-cft <url> [-- args]   extra flags are passed straight to cloudflared
 
 cloudflared is downloaded automatically if it isn't on PATH (cached in ~/.cache/cft).
 Prints a https://<random>.trycloudflare.com URL you can open from anywhere.`);

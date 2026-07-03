@@ -1,7 +1,11 @@
 {
-  "name": "cft",
+  "name": "cicy-cft",
   "version": "1.0.0",
-  "description": "One-command Cloudflare quick tunnel for a local port — npx cft 8008.",
+  "description": "One-command Cloudflare quick tunnel for a local port — npx cicy-cft 8008.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cicy-ai/cft.git"
+  },
   "bin": {
     "cft": "bin/cft.js"
   },

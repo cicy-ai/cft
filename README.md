@@ -3,14 +3,14 @@
 One-command Cloudflare **quick tunnel** for a local port. No account, no config.
 
 ```bash
-npx github:cicy-ai/cft 8008                 # → tunnels http://localhost:8008
-npx github:cicy-ai/cft localhost:3000       # host:port form
-npx github:cicy-ai/cft http://127.0.0.1:5173 -- --loglevel debug   # extra flags → cloudflared
+npx cicy-cft 8008                 # → tunnels http://localhost:8008
+npx cicy-cft localhost:3000       # host:port form
+npx cicy-cft http://127.0.0.1:5173 -- --loglevel debug   # extra flags → cloudflared
 ```
 
-> The bare name `cft` on npm belongs to an unrelated package, so use the
-> `github:cicy-ai/cft` form (or `npm i -g github:cicy-ai/cft` to get a local `cft`
-> command).
+> Published as **`cicy-cft`** (the bare name `cft` on npm is an unrelated package).
+> No-publish fallback: `npx github:cicy-ai/cft 8008`, or `npm i -g cicy-cft` for a
+> global `cft`… run it as `cicy-cft`.
 
 It prints a public `https://<random>.trycloudflare.com` URL you can open from anywhere.
 
@@ -29,7 +29,7 @@ Google's JWT auth endpoint, which has no CORS headers — so apps that verify au
 XHR fail with a CORS error. A direct Cloudflare tunnel bypasses that proxy entirely:
 
 ```bash
-npx github:cicy-ai/cft 8008
+npx cicy-cft 8008
 # open the printed https://xxx.trycloudflare.com URL (append ?token=... if your app needs it)
 ```
 
