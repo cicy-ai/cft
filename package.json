@@ -1,0 +1,24 @@
+{
+  "name": "cft",
+  "version": "1.0.0",
+  "description": "One-command Cloudflare quick tunnel for a local port — npx cft 8008.",
+  "bin": {
+    "cft": "bin/cft.js"
+  },
+  "files": [
+    "bin"
+  ],
+  "engines": {
+    "node": ">=14"
+  },
+  "keywords": [
+    "cloudflare",
+    "cloudflared",
+    "tunnel",
+    "port",
+    "expose",
+    "ngrok",
+    "quick-tunnel"
+  ],
+  "license": "MIT"
+}
